@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello world!</title>
+    <!-- Load React. -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+<body>
+  <div id="root"></div>
+  <div id="box"></div>
+  <script type="text/babel">
+  ReactDOM.render(
+    <h1>Hello React!</h1>,
+    document.getElementById('box')
+  );
+
+  // Another example
+
+  class Hello extends React.Component {
+    render() {
+      return <h1>Hello World!</h1>
+    }
+  }
+  ReactDOM.render(<Hello />, document.getElementById('root'))
+
+  </script>
+</body>
+</html>
